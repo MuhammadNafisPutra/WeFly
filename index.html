@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Fly - Jelajahi Dunia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">We Fly</div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                        <li><a href="#pemesanan" class="nav-link">Pemesanan</a></li>
+                        <li><a href="#kritik" class="nav-link">Kritik & Saran</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="beranda" class="page-section">
+            <div class="hero-section-content">
+                <div class="container">
+                    <div class="hero-layout">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                We Fly, <br> Terbang kemana saja dengan kami
+                            </h1>
+                            <p class="hero-description">
+                                Didirikan sejak tahun 2010, We Fly berkomitmen menyediakan pengalaman terbang terbaik untuk petualangan Anda.<br><b>MUHAMMAD NAFIS PUTRA : 2410817210021</b><br>
+                            </p>
+                        </div>
+                        <div class="card search-card">
+                            <form class="search-form" id="flight-search-form">
+                                <div class="form-group full-width">
+                                    <label for="from">Dari</label>
+                                    <input type="text" id="from" placeholder="Kota atau bandara">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="to">Ke</label>
+                                    <input type="text" id="to" placeholder="Kota atau bandara" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="departure-date">Tanggal Pergi</label>
+                                    <input type="date" id="departure-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="return-date">Tanggal Pulang</label>
+                                    <input type="date" id="return-date">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="passenger">Penumpang & Kelas</label>
+                                    <input type="text" id="passenger">
+                                </div>
+                                <div class="form-group full-width">
+                                    <button type="submit" class="btn btn-primary">
+                                        Ayo Cari
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <section id="pemesanan" class="page-section">
+    <div class="container">
+        <h2 class="section-title">Formulir Pemesanan</h2>
+
+        <table style="width: 100%; border-collapse: collapse;">
+            <tbody>
+
+                <tr>
+                    <td style="padding-bottom: 60px;"> <div class="card booking-form-container">
+                            <h3 style="text-align: center; font-weight: 800; margin-bottom: 20px; color: #333;">Formulir Pemesanan Tiket</h3>
+                            <form class="general-form" onsubmit="event.preventDefault(); alert('Pemesanan sedang diproses. Terima Kasih.'); this.reset();">
+                                <div class="form-group">
+                                    <label for="nama-pemesan">Nama Lengkap</label>
+                                    <input type="text" id="nama-pemesan" placeholder="Masukkan nama lengkap Anda" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email-pemesan">Email</label>
+                                    <input type="email" id="email-pemesan" placeholder="Masukkan alamat email aktif" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dari-pemesan">Dari</label>
+                                    <input type="text" id="dari-pemesan" placeholder="Kota atau bandara keberangkatan" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ke-pemesan">Ke</label>
+                                    <input type="text" id="ke-pemesan" placeholder="Kota atau bandara tujuan" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="jumlah-penumpang">Jumlah Penumpang</label>
+                                    <input type="number" id="jumlah-penumpang" placeholder="Contoh: 2" min="1" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Kirim Pesanan</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="destination-table" style="width: 100%; border-spacing: 15px; border-collapse: separate;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 33.33%; vertical-align: top; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 0; text-align: center; background-color: #fff;">
+                                        <img src="bandung.png" alt="Destinasi Wisata Bandung" style="width: 100%; height: 180px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="destination-box-content" style="padding: 15px;">
+                                            <h4>Bandung</h4>
+                                            <p class="location">Kota penuh kreativitas dengan udara sejuk, wisata belanja, dan kuliner legendaris yang selalu menggoda.</p>
+                                            <p class="price"><br>Harga Potongan Menjadi<br><strong>Rp 600.000</strong></p>
+                                            <a href="#pemesanan" class="btn-details" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px;">Pesan Sekarang</a>
+                                        </div>
+                                    </td>
+                                    <td style="width: 33.33%; vertical-align: top; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 0; text-align: center; background-color: #fff;">
+                                        <img src="Lombok.jpg" alt="Destinasi Wisata Lombok" style="width: 100%; height: 180px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="destination-box-content" style="padding: 15px;">
+                                            <h4>Lombok</h4>
+                                            <p class="location"> Jelajahi surga Indonesia ini hanya dengan We Fly, Jelajahi Dunia Mulai dari Sini.<br></p>
+                                            <p class="price"><br><br>Harga Potongan Menjadi<br><strong>Rp 750.000</strong></p>
+                                            <a href="#pemesanan" class="btn-details" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px;">Pesan Sekarang</a>
+                                        </div>
+                                    </td>
+                                    <td style="width: 33.33%; vertical-align: top; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 0; text-align: center; background-color: #fff;">
+                                        <img src="bali.jpg" alt="Destinasi Wisata Bali" style="width: 100%; height: 180px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="destination-box-content" style="padding: 15px;">
+                                            <h4>Bali</h4>
+                                            <p class="location">Nikmati keindahan pantai berpasir putih, budaya yang kaya, dan suasana tropis yang memanjakan jiwa.</p>
+                                            <p class="price"><br>Harga Potongan Menjadi <br><strong>Rp 850.000</strong></p>
+                                            <a href="#pemesanan" class="btn-details" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px;">Pesan Sekarang</a>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="kritik" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Berikan Masukan Anda</h2>
+                <div class="card form-card">
+                    <form class="general-form" onsubmit="event.preventDefault(); alert('Terima kasih atas masukan Anda!'); this.reset();">
+                        <div class="form-group">
+                            <label for="nama-kritik">Nama Anda</label>
+                            <input type="text" id="nama-kritik" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="saran-anda">Kritik & Saran</label>
+                            <textarea id="saran-anda" placeholder="Tulis kritik atau saran Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Masukan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Contact Person: (0555) 4421 | Email: wefly@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
